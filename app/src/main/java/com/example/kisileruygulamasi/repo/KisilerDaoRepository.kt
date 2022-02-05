@@ -2,20 +2,36 @@ package com.example.kisileruygulamasi.repo
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
+import com.example.kisileruygulamasi.entity.CRUDCevap
 import com.example.kisileruygulamasi.entity.Kisiler
+import com.example.kisileruygulamasi.entity.KisilerCevap
+import com.example.kisileruygulamasi.retrofit.ApiUtils
+import com.example.kisileruygulamasi.retrofit.KisilerDaoInterface
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class KisilerDaoRepository {
-    var kisilerListesi : MutableLiveData<List<Kisiler>>
+    var kisilerListesi: MutableLiveData<List<Kisiler>>
+    var kdao: KisilerDaoInterface
+
     init {
+        kdao = ApiUtils.getKisilerDaoInterface()
         kisilerListesi = MutableLiveData()
     }
 
-    fun kisileriGetir():MutableLiveData<List<Kisiler>>{
+    fun kisileriGetir(): MutableLiveData<List<Kisiler>> {
         return kisilerListesi
 
     }
+
     fun kisiKayit(kisi_ad: String, kisi_tel: String) {
-        Log.e("Kişi Kayıt", "$kisi_ad-$kisi_tel")
+        kdao.kisiEkle(kisi_ad,kisi_tel).enqueue(object :Callback<CRUDCevap>{
+            override fun onResponse(call: Call<CRUDCevap>?, response: Response<CRUDCevap>?) {}
+
+            override fun onFailure(call: Call<CRUDCevap>?, t: Throwable?) {}
+
+        })
 
     }
 
@@ -30,14 +46,14 @@ class KisilerDaoRepository {
     fun kisiSil(kisi_id: Int) {
         Log.e("Kişi Sil", kisi_id.toString())
     }
-    fun tumKisileriAl(){
-        val liste = ArrayList<Kisiler>()
-        val k1 = Kisiler(1, "Mehmet", "11111111")
-        val k2 = Kisiler(2, "Zeynep", "22222222")
-        val k3 = Kisiler(3, "Serçe", "33333333")
-        liste.add(k1)
-        liste.add(k2)
-        liste.add(k3)
-        kisilerListesi.value = liste
+
+    fun tumKisileriAl() {
+        kdao.tumKisiler().enqueue(object : Callback<KisilerCevap> {
+            override fun onFailure(call: Call<KisilerCevap>?, t: Throwable?) {}
+            override fun onResponse(call: Call<KisilerCevap>, response: Response<KisilerCevap>) {
+                val liste = response.body().kisiler
+                kisilerListesi.value = liste
+            }
+        })
     }
 }

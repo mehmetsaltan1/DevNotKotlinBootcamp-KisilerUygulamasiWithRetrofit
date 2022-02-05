@@ -1,18 +1,18 @@
 [
     {
-        "merged": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_kisi_kayit.xml",
-        "source": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi/app/src/main/res/layout/fragment_kisi_kayit.xml"
+        "merged": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_kisi_detay.xml",
+        "source": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi 2/app/src/main/res/layout/fragment_kisi_detay.xml"
     },
     {
-        "merged": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_anasayfa.xml",
-        "source": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi/app/src/main/res/layout/fragment_anasayfa.xml"
+        "merged": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_kisi_kayit.xml",
+        "source": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi 2/app/src/main/res/layout/fragment_kisi_kayit.xml"
     },
     {
-        "merged": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/card_tasarim.xml",
-        "source": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi/app/src/main/res/layout/card_tasarim.xml"
+        "merged": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/card_tasarim.xml",
+        "source": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi 2/app/src/main/res/layout/card_tasarim.xml"
     },
     {
-        "merged": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_kisi_detay.xml",
-        "source": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi/app/src/main/res/layout/fragment_kisi_detay.xml"
+        "merged": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_anasayfa.xml",
+        "source": "/Users/mehmetsaltan/StudioProjects/KisilerUygulamasi 2/app/src/main/res/layout/fragment_anasayfa.xml"
     }
 ]

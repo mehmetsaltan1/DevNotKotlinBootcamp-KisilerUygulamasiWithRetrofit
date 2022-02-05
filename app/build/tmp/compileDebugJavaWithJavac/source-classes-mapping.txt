@@ -11,14 +11,14 @@ androidx/databinding/library/baseAdapters/BR.java
 com/example/kisileruygulamasi/generated/callback/OnClickListener.java
  com.example.kisileruygulamasi.generated.callback.OnClickListener
  com.example.kisileruygulamasi.generated.callback.OnClickListener$Listener
-androidx/databinding/DataBindingComponent.java
- androidx.databinding.DataBindingComponent
-com/example/kisileruygulamasi/BuildConfig.java
- com.example.kisileruygulamasi.BuildConfig
 com/example/kisileruygulamasi/DataBinderMapperImpl.java
  com.example.kisileruygulamasi.DataBinderMapperImpl
  com.example.kisileruygulamasi.DataBinderMapperImpl$InnerBrLookup
  com.example.kisileruygulamasi.DataBinderMapperImpl$InnerLayoutIdLookup
+com/example/kisileruygulamasi/BuildConfig.java
+ com.example.kisileruygulamasi.BuildConfig
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
 com/example/kisileruygulamasi/databinding/CardTasarimBindingImpl.java
  com.example.kisileruygulamasi.databinding.CardTasarimBindingImpl
 com/example/kisileruygulamasi/databinding/FragmentAnasayfaBinding.java
