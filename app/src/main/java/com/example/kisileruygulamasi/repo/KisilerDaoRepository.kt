@@ -36,15 +36,31 @@ class KisilerDaoRepository {
     }
 
     fun kisiGuncelle(kisi_id: Int, kisi_ad: String, kisi_tel: String) {
-        Log.e("Kişi Güncelle", "$kisi_id - $kisi_ad - $kisi_tel")
+        kdao.kisiGuncelle(kisi_id,kisi_ad,kisi_tel).enqueue(object :Callback<CRUDCevap>{
+            override fun onResponse(call: Call<CRUDCevap>?, response: Response<CRUDCevap>?) {}
+            override fun onFailure(call: Call<CRUDCevap>?, t: Throwable?) {}
+
+        })
     }
 
     fun kisiAra(aramaKelimesi: String) {
-        Log.e("Kişi Ara", aramaKelimesi)
+        kdao.kisiAra(aramaKelimesi).enqueue(object : Callback<KisilerCevap> {
+            override fun onFailure(call: Call<KisilerCevap>?, t: Throwable?) {}
+            override fun onResponse(call: Call<KisilerCevap>, response: Response<KisilerCevap>) {
+                val liste = response.body().kisiler
+                kisilerListesi.value = liste
+            }
+        })
     }
 
     fun kisiSil(kisi_id: Int) {
-        Log.e("Kişi Sil", kisi_id.toString())
+        kdao.kisiSil(kisi_id).enqueue(object :Callback<CRUDCevap>{
+            override fun onResponse(call: Call<CRUDCevap>?, response: Response<CRUDCevap>?) {
+                tumKisileriAl()
+            }
+            override fun onFailure(call: Call<CRUDCevap>?, t: Throwable?) {}
+
+        })
     }
 
     fun tumKisileriAl() {
