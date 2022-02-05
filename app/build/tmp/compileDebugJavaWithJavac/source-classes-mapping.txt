@@ -1,0 +1,35 @@
+com/example/kisileruygulamasi/BR.java
+ com.example.kisileruygulamasi.BR
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+com/example/kisileruygulamasi/databinding/CardTasarimBinding.java
+ com.example.kisileruygulamasi.databinding.CardTasarimBinding
+com/example/kisileruygulamasi/DataBindingTriggerClass.java
+ com.example.kisileruygulamasi.DataBindingTriggerClass
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+com/example/kisileruygulamasi/generated/callback/OnClickListener.java
+ com.example.kisileruygulamasi.generated.callback.OnClickListener
+ com.example.kisileruygulamasi.generated.callback.OnClickListener$Listener
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/example/kisileruygulamasi/BuildConfig.java
+ com.example.kisileruygulamasi.BuildConfig
+com/example/kisileruygulamasi/DataBinderMapperImpl.java
+ com.example.kisileruygulamasi.DataBinderMapperImpl
+ com.example.kisileruygulamasi.DataBinderMapperImpl$InnerBrLookup
+ com.example.kisileruygulamasi.DataBinderMapperImpl$InnerLayoutIdLookup
+com/example/kisileruygulamasi/databinding/CardTasarimBindingImpl.java
+ com.example.kisileruygulamasi.databinding.CardTasarimBindingImpl
+com/example/kisileruygulamasi/databinding/FragmentAnasayfaBinding.java
+ com.example.kisileruygulamasi.databinding.FragmentAnasayfaBinding
+com/example/kisileruygulamasi/databinding/FragmentKisiDetayBinding.java
+ com.example.kisileruygulamasi.databinding.FragmentKisiDetayBinding
+com/example/kisileruygulamasi/databinding/FragmentKisiKayitBindingImpl.java
+ com.example.kisileruygulamasi.databinding.FragmentKisiKayitBindingImpl
+com/example/kisileruygulamasi/databinding/FragmentKisiDetayBindingImpl.java
+ com.example.kisileruygulamasi.databinding.FragmentKisiDetayBindingImpl
+com/example/kisileruygulamasi/databinding/FragmentKisiKayitBinding.java
+ com.example.kisileruygulamasi.databinding.FragmentKisiKayitBinding
+com/example/kisileruygulamasi/databinding/FragmentAnasayfaBindingImpl.java
+ com.example.kisileruygulamasi.databinding.FragmentAnasayfaBindingImpl
